@@ -26,8 +26,6 @@ import Foundation
 class InterfaceController: WKInterfaceController {
 
     @IBOutlet var timer: WKInterfaceTimer!
-    @IBOutlet var weightLabel: WKInterfaceLabel!
-    @IBOutlet var cookLabel: WKInterfaceLabel!
     @IBOutlet var timerButton: WKInterfaceButton!
     
     var ounces = 16
@@ -38,28 +36,8 @@ class InterfaceController: WKInterfaceController {
   override func awakeWithContext(context: AnyObject?) {
     super.awakeWithContext(context)
     
-    updateConfiguration()
-    
   }
     
-    func updateConfiguration() {
-        
-        cookLabel.setText(cookTemp.stringValue)
-        
-        var weight = ounces
-        var unit = "oz"
-        
-        if usingMetric {
-            
-            let grams = Double(ounces) * 28.3495
-            weight = Int(grams)
-            unit = "gm"
-        }
-        
-        weightLabel.setText("Weight: \(weight) \(unit)")
-
-    }
-
     @IBAction func onTimerButton() {
        
         if timerRunning {
@@ -75,30 +53,4 @@ class InterfaceController: WKInterfaceController {
         
         timerRunning = !timerRunning
 }
-    
-    @IBAction func onMinusButton() {
-        
-        ounces--
-        updateConfiguration()
-    }
-    
-    @IBAction func onPlusButton() {
-        
-        ounces++
-        updateConfiguration()
-    }
-    
-    @IBAction func onTempChange(value: Float) {
-        
-        if let temp = MeatTemperature(rawValue: Int(value)) {
-            cookTemp = temp
-            updateConfiguration()
-        }
-    }
-    
-    @IBAction func onMetricChanged(value: Bool) {
-        
-        usingMetric = value
-        updateConfiguration()
-    }
 }
