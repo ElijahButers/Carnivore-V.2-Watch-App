@@ -23,10 +23,12 @@
                                 </button>
                             </items>
                         </group>
+                        <picker height="100" alignment="left" id="jYH-QW-8oD"/>
                     </items>
                     <connections>
                         <outlet property="timer" destination="pFX-di-zrx" id="Ftu-Wm-yup"/>
                         <outlet property="timerButton" destination="TFP-Rj-2gn" id="dQC-mQ-qOc"/>
+                        <outlet property="weightPicker" destination="jYH-QW-8oD" id="k37-90-J9K"/>
                     </connections>
                 </controller>
             </objects>
