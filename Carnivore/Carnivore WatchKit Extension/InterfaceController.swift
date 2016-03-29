@@ -37,6 +37,16 @@ class InterfaceController: WKInterfaceController {
   override func awakeWithContext(context: AnyObject?) {
     super.awakeWithContext(context)
     
+    var weightItems: [WKPickerItem] = []
+    for i in 1...32 {
+        
+        let item = WKPickerItem()
+        item.title = String(i)
+        weightItems.append(item)
+    }
+    
+    weightPicker.setItems(weightItems)
+    weightPicker.setSelectedItemIndex(ounces - 1)
   }
     
     @IBAction func onTimerButton() {
