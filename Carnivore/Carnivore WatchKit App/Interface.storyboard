@@ -23,6 +23,7 @@
                                 </button>
                             </items>
                         </group>
+                        <label alignment="center" text="Weight (oz)" id="21x-Q2-Lo1"/>
                         <picker height="100" alignment="left" id="jYH-QW-8oD"/>
                     </items>
                     <connections>
