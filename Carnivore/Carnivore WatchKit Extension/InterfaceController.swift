@@ -64,4 +64,8 @@ class InterfaceController: WKInterfaceController {
         
         timerRunning = !timerRunning
 }
+    
+    @IBAction func OnWeightChanged(value: Int) {
+        
+    }
 }

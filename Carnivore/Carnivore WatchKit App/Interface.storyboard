@@ -24,7 +24,11 @@
                             </items>
                         </group>
                         <label alignment="center" text="Weight (oz)" id="21x-Q2-Lo1"/>
-                        <picker height="55" alignment="left" focusStyle="stack" id="jYH-QW-8oD"/>
+                        <picker height="55" alignment="left" focusStyle="stack" id="jYH-QW-8oD">
+                            <connections>
+                                <action selector="OnWeightChanged:" destination="AgC-eL-Hgc" id="o2f-l2-Ejc"/>
+                            </connections>
+                        </picker>
                     </items>
                     <connections>
                         <outlet property="timer" destination="pFX-di-zrx" id="Ftu-Wm-yup"/>
