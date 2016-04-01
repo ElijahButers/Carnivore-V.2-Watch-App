@@ -73,6 +73,10 @@ class InterfaceController: WKInterfaceController {
     }
     
     @IBAction func onTemperatureChanged(value: Int) {
+        
+        let temp = MeatTemperature(rawValue: value)!
+        cookTemp = temp
+        temperatureLabel.setText(temp.stringValue)
     }
     
 }
