@@ -30,9 +30,15 @@
                             </connections>
                         </picker>
                         <label alignment="center" text="Label" textAlignment="center" id="y6I-Po-yoJ"/>
+                        <picker height="100" alignment="left" style="sequence" focusStyle="stack" id="H2Z-15-3Cu">
+                            <connections>
+                                <action selector="onTemperatureChanged:" destination="AgC-eL-Hgc" id="b2b-F1-g6H"/>
+                            </connections>
+                        </picker>
                     </items>
                     <connections>
                         <outlet property="temperatureLabel" destination="y6I-Po-yoJ" id="CWQ-3J-CEK"/>
+                        <outlet property="temperaturePicker" destination="H2Z-15-3Cu" id="Vd1-A2-LA0"/>
                         <outlet property="timer" destination="pFX-di-zrx" id="Ftu-Wm-yup"/>
                         <outlet property="timerButton" destination="TFP-Rj-2gn" id="dQC-mQ-qOc"/>
                         <outlet property="weightPicker" destination="jYH-QW-8oD" id="k37-90-J9K"/>

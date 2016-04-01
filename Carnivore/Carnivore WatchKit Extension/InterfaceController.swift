@@ -29,6 +29,7 @@ class InterfaceController: WKInterfaceController {
     @IBOutlet var timerButton: WKInterfaceButton!
     @IBOutlet var weightPicker: WKInterfacePicker!
     @IBOutlet var temperatureLabel: WKInterfaceLabel!
+    @IBOutlet var temperaturePicker: WKInterfacePicker!
     
     var ounces = 16
     var cookTemp = MeatTemperature.Medium
@@ -69,6 +70,9 @@ class InterfaceController: WKInterfaceController {
     @IBAction func OnWeightChanged(value: Int) {
         
         ounces = value + 1
+    }
+    
+    @IBAction func onTemperatureChanged(value: Int) {
     }
     
 }
