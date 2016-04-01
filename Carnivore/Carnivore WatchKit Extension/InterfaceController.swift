@@ -67,5 +67,7 @@ class InterfaceController: WKInterfaceController {
     
     @IBAction func OnWeightChanged(value: Int) {
         
+        ounces = value + 1
     }
+    
 }
