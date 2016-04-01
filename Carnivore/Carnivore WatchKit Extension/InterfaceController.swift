@@ -28,6 +28,7 @@ class InterfaceController: WKInterfaceController {
     @IBOutlet var timer: WKInterfaceTimer!
     @IBOutlet var timerButton: WKInterfaceButton!
     @IBOutlet var weightPicker: WKInterfacePicker!
+    @IBOutlet var temperatureLabel: WKInterfaceLabel!
     
     var ounces = 16
     var cookTemp = MeatTemperature.Medium

@@ -29,8 +29,10 @@
                                 <action selector="OnWeightChanged:" destination="AgC-eL-Hgc" id="o2f-l2-Ejc"/>
                             </connections>
                         </picker>
+                        <label alignment="center" text="Label" textAlignment="center" id="y6I-Po-yoJ"/>
                     </items>
                     <connections>
+                        <outlet property="temperatureLabel" destination="y6I-Po-yoJ" id="CWQ-3J-CEK"/>
                         <outlet property="timer" destination="pFX-di-zrx" id="Ftu-Wm-yup"/>
                         <outlet property="timerButton" destination="TFP-Rj-2gn" id="dQC-mQ-qOc"/>
                         <outlet property="weightPicker" destination="jYH-QW-8oD" id="k37-90-J9K"/>
